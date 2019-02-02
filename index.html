@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,36 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <h1> project 1</h1>
-</body>
+]
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // Example queryURL for Giphy API
+        //var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
+        var queryURL = "https://api.schooldigger.com/v1.1/districts?st=CA&city=Elk%20Grove&perPage=10&appID=5febe14d&appKey=6dd3881d17b6e9cdfc35ad110c7b0fce";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET",
+
+        }).then(function (response) {
+            console.log(response);
+        });
+
+
+        // Example queryURL for Giphy API
+        //var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
+        var queryURL = "http://www.zillow.com/webservice/GetRegionChildren.htm?zws-id=X1-ZWz184mqjtok5n_5cfwc&state=ca&city=sacramento&childtype=neighborhood";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET",
+
+        }).then(function (response) {
+            console.log(response);
+        });
+    </script>
+
+
 </html>
