@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 //to validate email addresses entered, this API works!
@@ -42,3 +43,8 @@ $.ajax({
 
 // })
 
+=======
+$(document).ready(function () {
+
+})
+>>>>>>> eae8c80db0e3b16e525187c9a0ac02a4108add03
