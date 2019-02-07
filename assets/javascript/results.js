@@ -2,14 +2,17 @@
 
 // temp vars for layout remove when done
 var name = "KRU";
-var cusine = "fast";
-var loc = "fff";
+var cusine = "Sushi";
+var loc = "Mid-Town";
 var address = "1255 Folsom Blvd.";
 var rating = 4.2;
+var votes = 453;
 var cost = 10;
-var menuUrl = 'Menu';
+var menuUrl = "https://www.krurestaurant.com/";
 
 href = menuUrl
+
+ // star icon unicode is f005
 // stars logic 
 var starsTotal = 5;
 // get  Star percentage 
@@ -25,24 +28,27 @@ var starPercentageRounded = `${Math.round(starpercentage / 10) * 10}%` ;
 
 
 
+
+
+
+
 // A $( document ).ready() block.
 $(document).ready(function () {
 
 
   // need to replace variablis with dbObj from database info
 
-  // star icon unicode is f005
-
-
+ 
   // puts data to dom 
   var newRow = $('<tr>');
   newRow.append($(`<td>${name} </td>`));
   newRow.append($(`<td>${cusine}</td>`));
   newRow.append($(`<td>${loc} </td>`));
-  newRow.append($(`<td>${rating}</td>`));
+  newRow.append($(`<td>${rating} / 5  <span id="votes">- ${votes} Votes</span> </td>`));
   newRow.append($(`<td>$${cost}</td>`));
-  newRow.append($(`<td><button class="btn btn-danger" href=${href}>Menu</buttom></td>`));
+  newRow.append($(`<td><button type="button" value="Open Window" onclick="location.href='${href}';" class="btn btn-primary" href="${href}">Menu</button></td>`));
 
   $('tbody').append(newRow);
 
+ 
 });
