@@ -8,13 +8,14 @@ body{
     float: none;
     margin: 10px auto
 }
-.login-left{
+.container1{
     background: rgba(211, 211, 211, 0.5);
-    padding: 30px;
+    padding: 100px;
 }
-.register-right{
+.container2{
     background:  rgba(211, 211, 211, 0.5);
-    padding: 30px;
+    padding: 5px;
+    background-position: right
 }
 .form-control{
     background-color: transparent 
