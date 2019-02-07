@@ -1,48 +1,29 @@
 $(document).ready(function () {
-    
-//-----------------------------Page 3 Recipe Select-----------------------------------//
+    var keyword;
+    var prepTime;
 
-var formKeyword = encodeURI(keyword);
-var queryURL = "https://www.food2fork.com/api/search?key=7698efbc320ad7432bc2688700f3f72f&q=" + formKeyword;
+    $("#search").on("click", function () {
 
-//api key https://www.food2fork.com/api/search?key=YOUR_API_KEY&q=chicken%20breast&page=2 
+        var queryURL = "https://api.edamam.com/search?app_id=fa5fa3c7&app_key=c1479b4933942779535c50ed94e1de73&q=" + keyword;
 
-$.ajax({
-    url: queryURL,
-    method: "GET",
-}).then(function (response) {
-    console.log(JSON.parse(response));
-});
+        $.ajax({
+            url: queryURL,
+            method: "GET",
+        }).then(function (response) {
+            console.log(response);
+        });
+        keyword = $("#keyWordSearch").val().trim();
+        prepTime = $("#prepTimeSearch").val().trim();
 
-var newRevcDiv = $("<div class= 'recipeBox'>")
+        
 
-
-$("#checkoutRecipe").on("click", function () {
-
-
-})
-
-
-//-------------------------------Page 3 Look at recipe-----------------------//
-
-var queryURL = "https://www.food2fork.com/api/get?key=7698efbc320ad7432bc2688700f3f72f&rId=" + recipeId;
-
-//api key https://www.food2fork.com/api/search?key=YOUR_API_KEY&q=chicken%20breast&page=2 
-
-$.ajax({
-    url: queryURL,
-    method: "GET",
-}).then(function (response) {
-    console.log(JSON.parse(response));
-});
-
-// $("#chosenRecipe").on("click", function (){
-//     var recipeId=response.recipe.id
-
-
-// })
+    }
 
 
 
 
-})
+
+
+
+
+}
