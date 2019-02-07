@@ -1,0 +1,22 @@
+body{
+    color: white;
+}
+.jumbotron{
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    background: black;
+    text-align: center;
+    margin: 20px auto;
+}
+h1{font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+}
+.container{
+    min-width: 85%;
+}
+.display{
+    display: inline-table;
+}
+button{
+    margin: 5px;
+}
