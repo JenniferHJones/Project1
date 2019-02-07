@@ -3,7 +3,7 @@
   color: white;
   padding: 40px 0 ;
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -16,43 +16,86 @@ h1 {
   font-size: 60px
 }
 
-#schedule {
+#search {
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
   border: 3px solid lightskyblue;
   margin-bottom: 20px;
 }
 
-.sched {
+.search-results {
   background-color: lightskyblue;
   padding: 5px;
-  text-align: left;
-  color: white;
-}
-
-.train {
-  background-color: lightskyblue;
-  padding: 5px;
-  text-align: left;
-  color: white;
-}
-
-#add-train {
   text-align: center;
-  width: 70%;
+  color: white;
+}
+
+.search-critera {
+  background-color: lightskyblue;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+#add-search {
+  text-align: center;
+  width: 80%;
   margin: auto;
   border: 3px solid lightskyblue;
   margin-bottom: 20px;
 }
 
 form {
-  text-align: left;
+  display: block;
   padding: 10px;
 }
 
-.sched {
+.form-group {
+  width: 30%;
+  display: inline-block;
+  padding: 10px;
+}
+
+.search {
   align-content: center;
   text-align: center;
   margin: auto;
+}
+
+img {
+  width: 100px;
+  height: 90px;
+  
+}
+tr {
+  align-content: center;
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+
+}
+.stars-inner {
+position: absolute;
+top: 0;
+left: 0 ;
+white-space: nowrap;
+overflow: hidden;
+width:0;
+}
+
+.stars-outer ::before {
+  content: "\foo5 \foo5 \foo5 \foo5 \foo5";
+  font-family: 'font awsome 5 free';
+  font-weight: 900;
+  color: #ccc;
+}
+
+.stars-inner ::before {
+  content: "\foo5 \foo5 \foo5 \foo5 \foo5";
+  font-family: 'font awsome 5 free';
+  font-weight: 900;
+  color: #f8ce0b;
 }
