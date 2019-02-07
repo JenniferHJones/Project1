@@ -1,5 +1,5 @@
 body{
-    background:url(facilities-head4.jpg);
+    background:url(../images/facilities-head4.jpg);
     background-size:  cover; 
     background-position: center;
 }
@@ -18,5 +18,5 @@ body{
     background-position: right
 }
 .form-control{
-    background-color: transparent 
+    background-color: white 
 }
