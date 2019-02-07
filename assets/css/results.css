@@ -56,3 +56,12 @@ form {
   text-align: center;
   margin: auto;
 }
+
+img {
+  width: 100px;
+  height: 90px;
+  
+}
+tr {
+  align-content: center;
+}

@@ -4,11 +4,16 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                
                 <link href="assets/css/reset.css" rel="stylesheet">
+                
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
                     crossorigin="anonymous">
+
                 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+                
                 <link href="assets/css/results.css" rel="stylesheet">
 
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -23,6 +28,26 @@
         <h1>Sacramento Cravings</h1>
         <p>Your cravings are ??</p>
       </div>
+
+
+           <!-- #################### form area ###################### -->
+           <div id="add-train">
+            <div class="train">
+              <p>Add Train</p>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="train-name">Cusine</label>
+                <input type="text" class="form-control" id="train-name">
+              </div>
+              <div class="form-group">
+                <label for="Destination">Avg cost for 2</label>
+                <input type="text" class="form-control" id="destination">
+              </div>
+            
+              <button type="submit" id="add-train-btn" class="btn btn-danger">Submit</button>
+            </form>
+          </div> 
     
       <div id="schedule">
         <div class="sched">
@@ -32,10 +57,11 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">Image</th>
                 <th scope="col">Resturant Name</th>
-                <th scope="col">Address</th>
+                <th scope="col">Cusine</th>
+                <th scope="col">Location</th>
                 <th scope="col">Ratings</th>
+                <th scope="col">Average cost for 2</th>
                 <th scope="col">Menu</th>
               </tr>
             </thead>
@@ -47,7 +73,7 @@
         </div>
       
      <!-- #################### form area ###################### -->
-      <!-- <div id="add-train">
+      <div id="add-train">
         <div class="train">
           <p>Add Train</p>
         </div>
@@ -70,8 +96,8 @@
           </div>
           <button type="submit" id="add-train-btn" class="btn btn-danger">Submit</button>
         </form>
-      </div> -->
-    
+      </div> 
+  
 
 
 

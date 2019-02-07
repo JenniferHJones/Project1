@@ -1,25 +1,30 @@
-console.log("from results.js")
+//console.log("from results.js");
 
-var img = 'assets/images/kru.png';
+
 var name = "KRU";
+var cusine = "fast";
+var loc = "fff";
 var address = "1255 Folsom Blvd.";
 var rating = 4.2;
+var cost= 10;
 var menuUrl = 'Menu';
+
+href = menuUrl
+
 
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
-  console.log( " results ready!" );
+ 
+  // puts data to dom 
+  var newRow = $('<tr>');
+  newRow.append($(`<td>${name} </td>`));
+  newRow.append($(`<td>${cusine}</td>`));
+  newRow.append($(`<td> ${loc}</td>`));
+  newRow.append($(`<td> ${rating}/ 5</td>`));
+  newRow.append($(`<td> ${cost}</td>`));
+  newRow.append($(`<td><button href=${href}>Menu</buttom></td>`));
 
-
-// puts data to dom 
-var newRow = $('<tr>');
-newRow.append($("<td>" + `<img id='theImg' src=${img}/>` + "</td>"));
-newRow.append($("<td>" + name + "</td>"));
-newRow.append($("<td>" + address + "</td>"));
-newRow.append($("<td>" + rating+ "</td>"));
-newRow.append($("<td><button>" + menuUrl + "</buttom></td>"));
-
-$('tbody').append(newRow);
+  $('tbody').append(newRow);
 
 });
