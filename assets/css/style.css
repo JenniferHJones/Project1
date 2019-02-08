@@ -1,10 +1,11 @@
 body{
-    color: white;
+    color: black;
+    background-image: url(../images/recipe.jpg)
 }
 .jumbotron{
     font-size: 30px;
     font-family: 'Rajdhani', sans-serif;
-    background: black;
+    background: rgba(211, 211, 211, 0.80);
     text-align: center;
     margin: 20px auto;
 }
@@ -12,7 +13,7 @@ h1{font-family: 'Rajdhani', sans-serif;
     font-size: 40px;
 }
 .container{
-    min-width: 85%;
+    width: inherit;
 }
 .display{
     display: inline-table;

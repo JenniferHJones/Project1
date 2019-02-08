@@ -1,10 +1,11 @@
 $(document).ready(function () {
     var keyword;
     var prepTime;
+    var searchCriteria;
 
     $("#search").on("click", function () {
 
-        var queryURL = "https://api.edamam.com/search?app_id=fa5fa3c7&app_key=c1479b4933942779535c50ed94e1de73&q=" + keyword;
+        var queryURL = "https://api.edamam.com/search?app_id=fa5fa3c7&app_key=c1479b4933942779535c50ed94e1de73&q=" + searchCriteria;
 
         $.ajax({
             url: queryURL,
@@ -18,5 +19,21 @@ $(document).ready(function () {
         
 
     })
+    if ($("#prepTime").val().trim()!==""&&$("#keyword").val().trim()!==""){
+        
+        
+
+    }
+    if ($("#prepTime").val().trim()!==""){
+        
+
+    }
+
+
+
+
+
+
+
 
 })
