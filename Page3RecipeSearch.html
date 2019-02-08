@@ -1,18 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <link href="./assets/css/reset.css" rel="stylesheet">
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-                    crossorigin="anonymous">
-                <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-                <link href="./assets/css/style.css" rel="stylesheet">
-                <title>Document</title>
-            </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <title>Sacramento Cravings</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sacramento Cravings</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <li class="nav-item">
+                <a class="nav-link" href="./Page2ResorRec.html">Restaurant or Recipe?</a>
+            </li>
+            <a class="nav-link" href="./Page3RestaurantSearch.html">Restaurant Search</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./Page3RecipeSearch.html">Recipe Search<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Login</a>
+            </li>
+        </ul>
+        <span class="navbar-text">
+            <h1>What do you Crave?</h1>
+        </span>
+    </div>
+</nav>
+
 <body>
-    
+    <div class="container jumbotron align-self-center jumbotron-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="display-4">Search for a Recipe</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container jumbotron align-self-center jumbotron-fluid">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Keyword for Recipe</label>
+                        <input type="keyword" class="form-control" id="keyWordSearch" aria-describedby="keyword"
+                            placeholder="Enter Keyword">
+                    </div>
+                    <div class="form-group">
+                        <label for="preptime">Prep Time (in minutes)</label>
+                        <input type="preptime" class="form-control" id="prepTimeSearch" placeholder="30">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+    <script src="./Page3RecipeSearch.html"></script>
 </body>
+
 </html>
