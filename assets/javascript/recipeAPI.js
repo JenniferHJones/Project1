@@ -28,7 +28,7 @@ $("#search").on("click", function () {
 
         var object = response.data;
         var newRow;
-        var recipeArray = object.hits;
+        var recipeArray = response.data.hits;
         var newJumbo = $("<div class='container jumbotron align-self-center jumbotron-fluid'>");
         $(".container2").append(newJumbo);
 
