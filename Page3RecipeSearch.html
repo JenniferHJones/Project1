@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/recipe.css" rel="stylesheet">
     <title>Sacramento Cravings</title>
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -43,21 +43,21 @@
 </nav>
 
 <body>
-    <div class="container jumbotron align-self-center jumbotron-fluid">
+    <div class="container container1 jumbotron align-self-center jumbotron-fluid">
         <div class="row">
             <div class="col-sm">
                 <h1 class="display-4">Search for a Recipe</h1>
             </div>
         </div>
     </div>
-    <div class="container jumbotron align-self-center jumbotron-fluid">
+    <div class="container container2 jumbotron align-self-center jumbotron-fluid">
         <div class="row">
             <div class="col-sm">
             </div>
             <div class="col-sm">
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Keyword for Recipe</label>
+                        <label for="keyword">Keyword for Recipe</label>
                         <input type="keyword" class="form-control" id="keyWordSearch" aria-describedby="keyword"
                             placeholder="Enter Keyword">
                     </div>
@@ -65,14 +65,14 @@
                         <label for="preptime">Prep Time (in minutes)</label>
                         <input type="preptime" class="form-control" id="prepTimeSearch" placeholder="30">
                     </div>
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="submit" id="search" class="btn btn-primary">Search</button>
                 </form>
             </div>
             <div class="col-sm">
             </div>
         </div>
     </div>
-    <script src="./Page3RecipeSearch.html"></script>
+    <script src="./assets/javascript/recipeAPI.js"></script>
 </body>
 
 </html>
