@@ -27,11 +27,11 @@ $("#search").on("click", function () {
     }).then(function (response) {
         console.log(response);
         var newRow;
-        var recipeArray
+
         var newJumbo = $("<div class='container jumbotron align-self-center jumbotron-fluid'>");
         $(".container2").append(newJumbo);
-        var object = response.data[i];
-        recipeArray = object.hits[i];
+        var object = response.data;
+        var recipeArray = object.hits[i];
         for (var i = 0; i < recipeArray.length; i++) {
             var newRow = $("<div class='row'>");
             $(newJumbo).append(newRow);
