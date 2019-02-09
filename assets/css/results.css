@@ -1,5 +1,6 @@
 body {
   background-image: url(../images/resorrecimage.png);
+  background-attachment: fixed;
   font-family: 'Mukta', sans-serif;
 }
 
