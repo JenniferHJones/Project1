@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("#search").hide();
 
     // Zomato ajax call is limited to 20 results
     var queryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=499&entity_type=city&sort=rating&order=desc";
@@ -7,6 +8,8 @@ $(document).ready(function () {
     $("#searchRestaurant").on("click", function () {
         event.preventDefault();
         console.log("click");
+
+        $("#search").show();
 
         $("tbody").empty();
         var search = $("#keyword").val().trim();
@@ -39,19 +42,20 @@ $(document).ready(function () {
             newRow.append($("<td>" + restaurants[i].restaurant.user_rating.votes + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.average_cost_for_two + "</td>"));
             newRow.append($("<td><a class='btn btn-primary' href='" + restaurants[i].restaurant.menu_url + "' role='button'>Menu</button></a></td>"));
-            
-            var moreButton = ($("<button class='btn btn-primary more' text='More Results'>"));
 
             $("tbody").append(newRow);
-            $("tbody").append(moreButton);
         }
+        var moreButton = $("<button><a class='btn btn-primary more'>More Results</button>");
+        $(".moreResults").append(moreButton);
+        $(document).on("click", ".more", displayMore);
+
     }
 
-    $(document).on("click", ".more", displayMore);
 
     function displayMore() {
         start += 20;
         console.log(start);
+
 
         var queryUrlAgain = queryURL + "&start=" + start;
         console.log(queryUrlAgain);
