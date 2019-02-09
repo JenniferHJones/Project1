@@ -71,8 +71,13 @@ form {
   padding: 10px;
 }
 
+label {
+  align-content: center;
+  font-size: 25px;
+}
+
 .form-group {
-  width: 30%;
+  width: 40%;
   display: inline-block;
   padding: 10px;
 }
@@ -88,13 +93,13 @@ img {
   height: 90px;
   
 }
-tr {
+td {
   align-content: center;
-  font-weight: 900;
+  font-size: 18px;
 }
 
-thead {
-  font-size: 20px;
+th {
+  font-size: 24px;
   font-weight: 950;
 }
 
@@ -112,7 +117,7 @@ This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
 @media 
-only screen and (max-width: 760px),
+only screen and (max-width: 900px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
 	/* Force table to not be like tables anymore */
