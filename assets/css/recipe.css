@@ -22,6 +22,9 @@ button{
     margin: 5px;
 }
 .newRow{
-    margin-top: auto;
+    width: inherit;
 
+}
+.info{
+    width: inherit;
 }
