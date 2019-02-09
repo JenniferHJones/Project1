@@ -37,16 +37,15 @@ $(document).ready(function () {
             var newRow = $("<tr>");
             newRow.append($("<td>" + restaurants[i].restaurant.name + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.cuisines + "</td>"));
-            newRow.append($("<td>" + restaurants[i].restaurant.locality + "</td>"));
+            newRow.append($("<td>" + restaurants[i].restaurant.location.locality + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.user_rating.aggregate_rating + " / 5" + "</td>"));
-            newRow.append($("<td>" + restaurants[i].restaurant.user_rating.votes + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.average_cost_for_two + "</td>"));
             newRow.append($("<td><a class='btn btn-primary' href='" + restaurants[i].restaurant.menu_url + "' role='button'>Menu</button></a></td>"));
 
             $("tbody").append(newRow);
         }
         var moreButton = $("<button class='btn btn-primary more'>More Results</button>");
-        $("tfoot").append(moreButton);
+        $(".moreResults").append(moreButton);
         $(document).on("click", ".more", displayMore);
 
     }
