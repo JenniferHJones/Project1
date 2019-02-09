@@ -3,18 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- ############ Reset Css ############ -->
   <link href="assets/css/reset.css" rel="stylesheet">
+  <!-- ############ bootstrap CDN ############ -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- ############ Google API ############ -->
   <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+<!-- ############ p9age Css ############ -->
   <link href="assets/css/results.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
   <title>Sacramento Cravings</title>
 </head>
-
+<!-- ############ Nav Bar ############ -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Sacramento Cravings</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -38,7 +42,7 @@
     </ul>
   </div>
 </nav>
-
+<!-- ############ Body begins ############ -->
 <body>
 
 
@@ -54,16 +58,6 @@
         <label for="cuisine">Restaurant Name or Cuisine</label>
         <input type="text" class="form-control" id="keyword" placeholder="What do you crave?">
       </div>
-      <!-- <div class="form-group">
-        <label for="avgCost">Average cost for 2</label>
-        <select class="custom-select" id="inputGroupSelect02">
-          <option value="1" selected>Under $10</option>
-          <option value="2">$10 to $30</option>
-          <option value="3">$30 to $50</option>
-          <option value="4">Over $50</option>
-        </select>
-      </div> -->
-
       <button type="submit" id="searchRestaurant" class="btn btn-primary">Submit</button>
     </form>
   </div>
@@ -80,7 +74,7 @@
             <th scope="col">Cuisine</th>
             <th scope="col">Sacramento Location</th>
             <th scope="col">Ratings</th>
-            <th scope="col">Total Votes</th>
+            <!-- <th scope="col">Total Votes</th> -->
             <th scope="col">Avg. $ for 2</th>
             <th scope="col">Menu</th>
           </tr>
@@ -88,10 +82,13 @@
         <tbody>
 
         </tbody>
+        <div class="moreResults"></div>
       </table>
     </div>
   </div>
 
+
+  <!-- ############ bootstrap Script ############ -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -102,8 +99,7 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-  
+
   <!-- <script src="assets/javascript/results.js"></script> -->
   <script src="assets/javascript/restAPI.js"></script>
 </body>

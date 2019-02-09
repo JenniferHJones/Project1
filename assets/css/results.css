@@ -1,5 +1,5 @@
 body {
-  background-image: url(../images/facilities-head4.jpg);
+  background-image: url(../images/resorrecimage.png);
   font-family: 'Mukta', sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
 } */
 
 .top-bar {
-  background:  rgba(211, 211, 211, 0.6);
+  background:  rgba(211, 211, 211, 0.8);
   padding: 40px 0 ;
   text-align: center;
   width: 80%;
@@ -38,20 +38,20 @@ h1 {
   text-align: center;
   width: 80%;
   margin: auto;
-  background:  rgba(211, 211, 211, 0.3);
+  background:  rgba(211, 211, 211, 0.8);
   margin-bottom: 20px;
  
 }
 
 .search-results {
-  background:  rgba(211, 211, 211, 0.6);
+  background:  rgba(211, 211, 211, 0.8);
   padding: 5px;
   text-align: center;
   
 }
 
 .search-critera {
-  background:  rgba(211, 211, 211, 0.6);
+  background:  rgba(211, 211, 211, 0.8);
   padding: 5px;
   text-align: center;
   
@@ -61,7 +61,7 @@ h1 {
   text-align: center;
   width: 80%;
   margin: auto;
-  background:  rgba(211, 211, 211, 0.3);
+  background:  rgba(211, 211, 211, 0.8);
   margin-bottom: 20px;
 }
 
@@ -89,32 +89,10 @@ img {
 }
 tr {
   align-content: center;
-}
-
-.stars-outer {
-  position: relative;
-  display: inline-block;
-
-}
-.stars-inner {
-position: absolute;
-top: 0;
-left: 0 ;
-white-space: nowrap;
-overflow: hidden;
-width:0;
-}
-
-.stars-outer ::before {
-  content: "\foo5 \foo5 \foo5 \foo5 \foo5";
-  font-family: 'font awsome 5 free';
   font-weight: 900;
-  color: #ccc;
 }
 
-.stars-inner ::before {
-  content: "\foo5 \foo5 \foo5 \foo5 \foo5";
-  font-family: 'font awsome 5 free';
-  font-weight: 900;
-  color: #f8ce0b;
+thead {
+  font-size: 20px;
+  font-weight: 950;
 }
