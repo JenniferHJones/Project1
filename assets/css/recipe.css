@@ -1,6 +1,7 @@
 body{
     background-image: url(../images/recipe.jpg);
     font-family: 'Mukta', sans-serif;
+    background-attachment: fixed;
 }
 .jumbotron{
     font-size: 30px;
@@ -8,23 +9,25 @@ body{
     text-align: center;
     margin: 20px auto;
 }
-h1{
-    font-size: 40px;
-}
 .container2{
     width: inherit;
     height: 340px;
-}
-.display{
-    display: inline-table;
 }
 button{
     margin: 5px;
 }
 .newRow{
     width: inherit;
-
 }
 .info{
     width: inherit;
+}
+.ingredients{
+    text-align: left;
+}
+.link{
+    align-content: center;
+}
+h2{
+    text-align: center;
 }

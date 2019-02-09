@@ -5,6 +5,7 @@ var searchCriteria;
 
 $("#search").on("click", function () {
     event.preventDefault();
+    
     keyword = $("#keyWordSearch").val().trim();
     prepTime = $("#prepTimeSearch").val().trim();
     var encodeKey = encodeURI(keyword);
@@ -27,13 +28,14 @@ $("#search").on("click", function () {
     }).then(function (response) {
         console.log(response);
         var newRow;
-
-        var newJumbo = $("<div class='container jumbotron align-self-center jumbotron-fluid'>");
+    
+        var newJumbo = $("<div id ='results' class='container align-self-center '>");
+        $("#results").remove();
         $(".container2").append(newJumbo);
-
         var recipeArray = response.hits;
+
         for (var i = 0; i < recipeArray.length; i++) {
-            var newRow = $("<div class='newRow row'>");
+            var newRow = $("<div class='newRow jumbotron-fluid jumbotron row'>");
             $(newJumbo).append(newRow);
             // <------------Image------------> //
             var newResImg = $("<div class='imagecol col-sm-4'>");
@@ -41,11 +43,11 @@ $("#search").on("click", function () {
             $(newRow).append(newResImg);
             $(newResImg).append(image);
             // <------------Title------------> //
-            var newRecInfo = $("<div class='info col-sm-8'>");
+            var newRecInfo = $("<div class='info title col-sm-8'>");
             $(newRow).append(newRecInfo);
-            var newTitleRow = $("<div class='info row'>");
+            var newTitleRow = $("<div class='info'>");
             $(newRecInfo).append(newTitleRow);
-            $(newTitleRow).html(recipeArray[i].recipe.label);
+            $(newTitleRow).html("<h2>" + recipeArray[i].recipe.label + "</h2>");
             // <------------Prep Time------------> //
             var newPrepRow = $("<div class='info row'>");
             $(newRecInfo).append(newPrepRow);
@@ -61,11 +63,12 @@ $("#search").on("click", function () {
             var newIngredP = $("<p class='ingredients'>Ingredients: </p>");
             $(newIngredRow).append(newIngredP);
             var ingredList = recipeArray[i].recipe.ingredientLines;
-            for (var j = 0; j < ingredList.length; j++) {
-                $(newIngredP).append(ingredList[j]);
+            $(newIngredP).append(ingredList[0]);
+            for (var j = 1; j < ingredList.length; j++) {
+                $(newIngredP).append(", " + ingredList[j]);
             }
             // <------------Link for Recipe------------> //
-            var newLinkRow = $("<div class='info row'>");
+            var newLinkRow = $("<div class='info link justify-content-center row'>");
             $(newRecInfo).append(newLinkRow);
             $(newLinkRow).html("<a class='btn btn-primary' href='" + recipeArray[i].recipe.url + "' role='button'>Checkout the full recipe!</a>");
         }
