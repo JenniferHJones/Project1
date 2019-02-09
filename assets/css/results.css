@@ -43,20 +43,20 @@ h1 {
   text-align: center;
   width: 80%;
   margin: auto;
-  background:  rgba(211, 211, 211, 0.8);
+  background:  rgba(211, 211, 211, 0.9);
   margin-bottom: 20px;
  
 }
 
 .search-results {
-  background:  rgba(211, 211, 211, 0.8);
+  background:  rgba(211, 211, 211, 0.9);
   padding: 5px;
   text-align: center;
   
 }
 
 .search-critera {
-  background:  rgba(211, 211, 211, 0.8);
+  background:  rgba(211, 211, 211, 0.9);
   padding: 5px;
   text-align: center;
   
@@ -66,7 +66,7 @@ h1 {
   text-align: center;
   width: 80%;
   margin: auto;
-  background:  rgba(211, 211, 211, 0.8);
+  background:  rgba(211, 211, 211, 0.9);
   margin-bottom: 20px;
 }
 
@@ -100,10 +100,11 @@ img {
 td {
   align-content: center;
   font-size: 18px;
+  font-weight: 600;
 }
 
 th {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 950;
 }
 
