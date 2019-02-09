@@ -30,8 +30,8 @@ $("#search").on("click", function () {
 
         var newJumbo = $("<div class='container jumbotron align-self-center jumbotron-fluid'>");
         $(".container2").append(newJumbo);
-        var object = response.data;
-        var recipeArray = object.hits[i];
+    
+        var recipeArray = response.hits;
         for (var i = 0; i < recipeArray.length; i++) {
             var newRow = $("<div class='row'>");
             $(newJumbo).append(newRow);
@@ -45,7 +45,7 @@ $("#search").on("click", function () {
             $(newRow).append(newRecInfo);
             var newTitleRow = $("<div class='info row'>");
             $(newRecInfo).append(newTitleRow);
-            $(newTitleRow).html(object.hits[i].recipe.label);
+            $(newTitleRow).html(recipeArray[i].recipe.label);
             // <------------Prep Time------------> //
             var newPrepRow = $("<div class='info row'>");
             $(newRecInfo).append(newPrepRow);
@@ -58,11 +58,11 @@ $("#search").on("click", function () {
             // <------------Ingredients------------> //
             var newIngredRow = $("<div class='info row'>");
             $(newRecInfo).append(newIngredRow);
-            $(newRecIngred).html(recipeArray[i].recipe.ingredients);
+            $(newIngredRow).html(recipeArray[i].recipe.ingredients);
             // <------------Link for Recipe------------> //
-            var newIngredRow = $("<div class='info row'>");
+            var newLinkRow = $("<div class='info row'>");
             $(newRecInfo).append(newLinkRow);
-            $(newRecLink).html("<a class='btn btn-primary' href='" + recipeArray[i].recipe.url + "' role='button'>Checkout the full recipe!</a>");
+            $(newLinkRow).html("<a class='btn btn-primary' href='" + recipeArray[i].recipe.url + "' role='button'>Checkout the full recipe!</a>");
         }
     });
 })
