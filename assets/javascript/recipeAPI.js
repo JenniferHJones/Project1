@@ -4,6 +4,7 @@ var prepTime;
 var searchCriteria;
 
 $("#search").on("click", function () {
+    event.preventDefault();
     keyword = $("#keyWordSearch").val().trim();
     prepTime = $("#prepTimeSearch").val().trim();
     var encodeKey = encodeURI(keyword);
@@ -17,7 +18,7 @@ $("#search").on("click", function () {
     else if ($("#keyWordSearch").val().trim() !== "") {
         searchCriteria = "&q=" + encodeKey;
     }
-
+    console.log($("#keyWordSearch").val().trim());
     var queryURL = "https://api.edamam.com/search?app_id=fa5fa3c7&app_key=c1479b4933942779535c50ed94e1de73" + searchCriteria;
 
     $.ajax({
@@ -28,7 +29,7 @@ $("#search").on("click", function () {
 
         var object = response.data;
         var newRow;
-        var recipeArray = response.data.hits;
+        // var recipeArray = response.data.hits;
         var newJumbo = $("<div class='container jumbotron align-self-center jumbotron-fluid'>");
         $(".container2").append(newJumbo);
 
@@ -46,25 +47,7 @@ $("#search").on("click", function () {
             newRow.append($("<td>" + formNextTrain + "</td>"));
             newRow.append($("<td>" + trainMinutesAway + "</td>"));
 
-
-
         }
-
-
-
-
-
-
-
-
     });
-
-
-
-
-
-
-
-
 
 })
