@@ -33,7 +33,7 @@ $("#search").on("click", function () {
     
         var recipeArray = response.hits;
         for (var i = 0; i < recipeArray.length; i++) {
-            var newRow = $("<div class='row'>");
+            var newRow = $("<div class='newRow row'>");
             $(newJumbo).append(newRow);
             // <------------Image------------> //
             var newResImg = $("<div class='imagecol col-sm-4'>");
@@ -49,16 +49,16 @@ $("#search").on("click", function () {
             // <------------Prep Time------------> //
             var newPrepRow = $("<div class='info row'>");
             $(newRecInfo).append(newPrepRow);
-            if (recipeArray[i].recipe.totalTime = 0) {
-                $(newPrepRow).html("Unknown");
+            if (recipeArray[i].recipe.totalTime === 0) {
+                $(newPrepRow).html("Prep Time: Unknown");
             }
             else {
-                $(newPrepRow).html(recipeArray[i].recipe.totalTime);
+                $(newPrepRow).html("Prep Time: "+recipeArray[i].recipe.totalTime +" Minutes");
             }
             // <------------Ingredients------------> //
             var newIngredRow = $("<div class='info row'>");
             $(newRecInfo).append(newIngredRow);
-            $(newIngredRow).html(recipeArray[i].recipe.ingredients);
+            $(newIngredRow).html("Ingredients: "+recipeArray[i].recipe.ingredientsList);
             // <------------Link for Recipe------------> //
             var newLinkRow = $("<div class='info row'>");
             $(newRecInfo).append(newLinkRow);
