@@ -2,6 +2,10 @@ body{
     background-image: url(../images/recipe.jpg);
     font-family: 'Mukta', sans-serif;
     background-attachment: fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .jumbotron{
     font-size: 30px;

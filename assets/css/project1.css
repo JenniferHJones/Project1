@@ -1,26 +1,26 @@
 body{
     background:url(../images/Sac-Night.jpg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1400px 1100px;
-
-    
+    background-attachment: fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Mukta', sans-serif;
 }
-.login-box{
-    max-width: 500px;
-    float: none;
-    margin: 10px auto
+.jumbotron{
+    font-size: 30px;
+    background: rgba(211, 211, 211, 0.80);
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Mukta', sans-serif;
+    max-width: 45%;
 }
 .container1{
-    background: rgba(211, 211, 211, 0.5);
-    padding: 100px;
+    width: inherit;
 }
 .container2{
-    background:  rgba(211, 211, 211, 0.5);
-    padding: 5px;
-    background-position: right
+    width: inherit;
 }
-.form-control{
-    background-color: white 
+.loginhead{
+    border-bottom: 2px;
 }
