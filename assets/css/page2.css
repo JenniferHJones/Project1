@@ -1,0 +1,22 @@
+body{
+    background:url(../images/facilities-head4.jpg);
+    background-size:  cover; 
+    background-position: center;
+}
+.login-box{
+    max-width: 500px;
+    float: none;
+    margin: 10px auto
+}
+.container1{
+    background:white;
+    padding: 50px;
+}
+.container2{
+    background:white;
+    padding: 5px;
+    background-position: right
+}
+.form-control{
+    background-color: white 
+}

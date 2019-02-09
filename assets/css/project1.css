@@ -1,7 +1,11 @@
 body{
-    background:url(../images/facilities-head4.jpg);
-    background-size:  cover; 
+    background:url(../images/Sac-Night.jpg);
+    height: 100%;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1400px 1100px;
+
+    
 }
 .login-box{
     max-width: 500px;
