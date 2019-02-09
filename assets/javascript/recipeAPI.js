@@ -5,6 +5,7 @@ var searchCriteria;
 
 $("#search").on("click", function () {
     event.preventDefault();
+    
     keyword = $("#keyWordSearch").val().trim();
     prepTime = $("#prepTimeSearch").val().trim();
     var encodeKey = encodeURI(keyword);
@@ -27,13 +28,14 @@ $("#search").on("click", function () {
     }).then(function (response) {
         console.log(response);
         var newRow;
-
-        var newJumbo = $("<div class='container jumbotron align-self-center jumbotron-fluid'>");
+    
+        var newJumbo = $("<div id ='results' class='container align-self-center '>");
+        $("#results").remove();
         $(".container2").append(newJumbo);
         var recipeArray = response.hits;
 
         for (var i = 0; i < recipeArray.length; i++) {
-            var newRow = $("<div class='newRow row'>");
+            var newRow = $("<div class='newRow jumbotron-fluid jumbotron row'>");
             $(newJumbo).append(newRow);
             // <------------Image------------> //
             var newResImg = $("<div class='imagecol col-sm-4'>");
