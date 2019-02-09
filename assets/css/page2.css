@@ -1,7 +1,11 @@
 body{
-    background:url(../images/facilities-head4.jpg);
-    background-size:  cover; 
-    background-position: center;
+    background:url(../images/SacramentoBridge.png);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
 }
 .login-box{
     max-width: 500px;
@@ -9,14 +13,22 @@ body{
     margin: 10px auto
 }
 .container1{
-    background:white;
+    background:rgba(211, 211, 211, 0.8);
     padding: 50px;
+    text-align: center;
 }
 .container2{
-    background:white;
-    padding: 5px;
-    background-position: right
+    background:rgba(211, 211, 211, 0.8);
+    padding: 20px;
+    width: inherit;
 }
 .form-control{
     background-color: white 
+}
+h2{
+    text-align: center;
+}
+.jumbotron{
+    width: inherit;
+    margin: 20px auto;
 }
