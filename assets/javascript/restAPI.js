@@ -45,8 +45,8 @@ $(document).ready(function () {
 
             $("tbody").append(newRow);
         }
-        var moreButton = $("<button><a class='btn btn-primary more'>More Results</button>");
-        $(".moreResults").append(moreButton);
+        var moreButton = $("<button class='btn btn-primary more'>More Results</button>");
+        $("tfoot").append(moreButton);
         $(document).on("click", ".more", displayMore);
 
     }
