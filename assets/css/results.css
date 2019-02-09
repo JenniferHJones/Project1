@@ -1,12 +1,15 @@
-body{
+body {
+  background-image: url(../images/facilities-head4.jpg);
+  font-family: 'Mukta', sans-serif;
+}
+
+/* body{
   background:url(../images/facilities-head4.jpg);
   background-size:  cover; 
   background-position: center;
   background-color: rebeccapurple;
   background-blend-mode: screen;
-}
-
-
+} */
 
 .top-bar {
   background:  rgba(211, 211, 211, 0.6);
@@ -18,11 +21,11 @@ body{
   margin-bottom: 20px;
 }
 
-body {
+/* body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
   font-weight: 900
-}
+} */
 
 h1 {
   font-size: 60px
