@@ -26,28 +26,43 @@ $("#search").on("click", function () {
         method: "GET",
     }).then(function (response) {
         console.log(response);
-
-        var object = response.data;
         var newRow;
-        // var recipeArray = response.data.hits;
+        var recipeArray
         var newJumbo = $("<div class='container jumbotron align-self-center jumbotron-fluid'>");
         $(".container2").append(newJumbo);
-
+        var object = response.data[i];
+        recipeArray = object.hits[i];
         for (var i = 0; i < recipeArray.length; i++) {
-
             var newRow = $("<div class='row'>");
             $(newJumbo).append(newRow);
-            var newResImg = $("<div class='imagecol col-sm'>");
-            var newResInfo = $("<div class='info col-sm'>");
-            $(newResImg).html(object.hits[i].image);
-
-            newRow.append($("<td>" + dbObj.name + "</td>"));
-            newRow.append($("<td>" + dbObj.destination + "</td>"));
-            newRow.append($("<td>" + dbObj.frequency + "</td>"));
-            newRow.append($("<td>" + formNextTrain + "</td>"));
-            newRow.append($("<td>" + trainMinutesAway + "</td>"));
-
+            // <------------Image------------> //
+            var newResImg = $("<div class='imagecol col-sm-4'>");
+            var image = $("<image src=" + recipeArray[i].recipe.image + ">");
+            $(newRow).append(newResImg);
+            $(newResImg).append(image);
+            // <------------Title------------> //
+            var newRecInfo = $("<div class='info col-sm-8'>");
+            $(newRow).append(newRecInfo);
+            var newTitleRow = $("<div class='info row'>");
+            $(newRecInfo).append(newTitleRow);
+            $(newTitleRow).html(object.hits[i].recipe.label);
+            // <------------Prep Time------------> //
+            var newPrepRow = $("<div class='info row'>");
+            $(newRecInfo).append(newPrepRow);
+            if (recipeArray[i].recipe.totalTime = 0) {
+                $(newPrepRow).html("Unknown");
+            }
+            else {
+                $(newPrepRow).html(recipeArray[i].recipe.totalTime);
+            }
+            // <------------Ingredients------------> //
+            var newIngredRow = $("<div class='info row'>");
+            $(newRecInfo).append(newIngredRow);
+            $(newRecIngred).html(recipeArray[i].recipe.ingredients);
+            // <------------Link for Recipe------------> //
+            var newIngredRow = $("<div class='info row'>");
+            $(newRecInfo).append(newLinkRow);
+            $(newRecLink).html("<a class='btn btn-primary' href='" + recipeArray[i].recipe.url + "' role='button'>Checkout the full recipe!</a>");
         }
     });
-
 })
