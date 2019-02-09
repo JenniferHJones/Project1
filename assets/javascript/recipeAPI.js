@@ -30,7 +30,7 @@ $("#search").on("click", function () {
 
         var newJumbo = $("<div class='container jumbotron align-self-center jumbotron-fluid'>");
         $(".container2").append(newJumbo);
-    
+
         var recipeArray = response.hits;
         for (var i = 0; i < recipeArray.length; i++) {
             var newRow = $("<div class='newRow row'>");
@@ -53,12 +53,17 @@ $("#search").on("click", function () {
                 $(newPrepRow).html("Prep Time: Unknown");
             }
             else {
-                $(newPrepRow).html("Prep Time: "+recipeArray[i].recipe.totalTime +" Minutes");
+                $(newPrepRow).html("Prep Time: " + recipeArray[i].recipe.totalTime + " Minutes");
             }
             // <------------Ingredients------------> //
             var newIngredRow = $("<div class='info row'>");
             $(newRecInfo).append(newIngredRow);
-            $(newIngredRow).html("Ingredients: "+recipeArray[i].recipe.ingredientsList);
+            var newIngredP = $("<p class='ingredients'>Ingredients: </p>");
+            $(newIngredRow).append(newIngredP);
+            var ingredList = recipeArray[i].recipe.ingredientLines;
+            for (var j = 0; j < ingredList.length; j++) {
+                $(newIngredP).append(ingredList[j]);
+            }
             // <------------Link for Recipe------------> //
             var newLinkRow = $("<div class='info row'>");
             $(newRecInfo).append(newLinkRow);
