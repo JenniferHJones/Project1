@@ -1,5 +1,7 @@
 $(document).ready(function () {
     $("#search").hide();
+    $("#more").hide();
+
 
     // Zomato ajax call is limited to 20 results
     var queryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=499&entity_type=city&sort=rating&order=desc";
@@ -44,17 +46,14 @@ $(document).ready(function () {
 
             $("tbody").append(newRow);
         }
-        var moreButton = $("<button class='btn btn-primary more'>More Results</button>");
-        $(".moreResults").append(moreButton);
-        $(document).on("click", ".more", displayMore);
-
+        $("#more").show();
     }
 
+    $(document).on("click", ".more", displayMore);
 
     function displayMore() {
         start += 20;
         console.log(start);
-
 
         var queryUrlAgain = queryURL + "&start=" + start;
         console.log(queryUrlAgain);
@@ -68,7 +67,7 @@ $(document).ready(function () {
             method: "GET",
         }).then(function (response) {
 
-            displayData(response.data)
+            displayData(response.restaurants)
         })
     }
 
