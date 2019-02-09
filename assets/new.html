@@ -35,12 +35,12 @@ $(document).ready(function () {
             newRow.append($("<td>" + restaurants[i].restaurant.name + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.cuisines + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.locality + "</td>"));
-            newRow.append($("<td>" + restaurants[i].restaurant.user_rating.aggregate_rating + " / 5" + "</td>"));
-            newRow.append($("<td>" + restaurants[i].restaurant.user_rating.votes + "</td>"));
-            newRow.append($("<td>" + restaurants[i].restaurant.average_cost_for_two + "</td>"));
-            newRow.append($("<td><a class='btn btn-primary' href='" + restaurants[i].restaurant.menu_url + "' role='button'>Menu</button></a></td>"));
+            // newRow.append($("<td>" + data[i].user_rating.aggregate_rating + "&/5" + "</td>"));
+            // newRow.append($("<td>" + data[i].user_rating.votes + "</td>"));
+            // newRow.append($("<td>" + data[i].average_cost_for_two + "</td>"));
+            // newRow.append($("<td><button class='btn btn-success' data-key='" + data[i].menu_url + "'>Menu</button></td>"));
             
-            var moreButton = ($("<button class='btn btn-primary more' text='More Results'>"));
+            var moreButton = ($("<button class='btn btn-success more' text='More Results'>"));
 
             $("tbody").append(newRow);
             $("tbody").append(moreButton);
