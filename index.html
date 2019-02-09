@@ -6,69 +6,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="./assets/css/reset.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link href="./assets/css/project1.css" rel="stylesheet">
   <title>Sacramento Cravings</title>
 </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Sacramento Cravings</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+      <li class="nav-item">
+        <a class="nav-link" href="./Page2ResorRec.html">Restaurant or Recipe?</a>
+      </li>
+      <a class="nav-link" href="./Page3RestaurantSearch.html">Restaurant Search</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="./Page3RecipeSearch.html">Recipe Search<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Login</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <h1>What do you Crave?</h1>
+    </span>
+  </div>
+</nav>
 
 <body>
-  <nav class="topbar">
-    <header class="top-line">
-      <h1 class="name">Sacramento Cravings</h1>
-      <a class="search restaurants-tab" href="">Search Restaurants</a>
-      <a class="search recipes-tab" href="">Search Recipes</a>
 
-    </header>
-    <div class="container">
-      <div class="login-box">
-        <div class="row">
-          <div class="container1 container jumbotron">
-            <h2></h2>
-            <form action="validation.php" method="post">
-              <div class="form-group">
-                <label>Login Email </label>
-                <input type="text" name="User" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control" required>
-              </div>
-              <button type="button" class="btn btn-primary">Login</button>
-              <button type="button" class="btn btn-primary">Sign Up</button>
-            </form>
-          </div>
-          <div class="container2 container jumbotron">
-            <h2> Register </h2>
-            <form action="registration.php" method="post">
-              <div class="form-group">
-                <label> First Name</label>
-                <input type="text" name="User" id="signupName" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label> Last Name</label>
-                <input type="text" name="User" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control" required>
-              </div>
-              <label>Password</label>
-              <div class="form-group">
-                <input type="password" name="password" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label> Confirm Password</label>
-                <input type="text" name="User" class="form-control" required>
-              </div>
-              <button type="button" class="btn btn-primary">Register</button>
-            </form>
-          </div>
-
+  <div class="container1 container jumbotron align-self-center jumbotron-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <h1>Login to find what you Crave!</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container2 container jumbotron align-self-center jumbotron-fluid">
+    <div class="loginhead row">
+      <div class="col-sm-4">
+      </div>
+      <h2 class="col-sm-4">
+        Login
+      </h2>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <form class="col-sm-8">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+        </div>
+      </form>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <button type="submit" id="logIn" class="btn col-sm-4 btn-primary">Login</button>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <p class="col-sm-8">
+        Not a member? Hit <a id="hideLogIn" href="#">Sign Up</a>
+      </p>
+      <div class="col-sm-2">
+      </div>
+    </div>
 
-        </section>
+  </div>
+  <div class="container3 container jumbotron align-self-center jumbotron-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <form class="col-sm-8">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="email" class="form-control" id="signupName" aria-describedby="emailHelp"
+            placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="signupPassword" placeholder="Password">
+        </div>
+      </form>
+      <div class="col-sm-2">
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <button type="submit" id="signUp" class="btn col-sm-4 btn-primary">Complete Registration</button>
+        <div class="col-sm-4">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <p class="col-sm-8">
+          Already a member? Hit <a href="./index.html">Sign In</a>.
+        </p>
+        <div class="col-sm-2">
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 
