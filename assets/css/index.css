@@ -13,20 +13,19 @@ body{
     text-align: center;
     margin: 20px auto;
     font-family: 'Mukta', sans-serif;
-    max-width: 45%;
-}
-.container1{
-    width: inherit;
-    margin-top: 400px;
+    max-width: 30%;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-left: -10px;
-    padding-right: -10px;
+}
+/* .container1{
+    max-width: 50%;
+    margin-top: 400px;
+    
 
 }
 .container2{
-    width: inherit;
-}
-.loginhead{
-    border-bottom: 2px;
-}
+    max-width: 50%;
+    margin-top: 400px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+} */
