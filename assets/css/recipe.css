@@ -26,12 +26,52 @@ button{
 .info{
     width: inherit;
 }
-.ingredients{
-    text-align: left;
+
 }
 .link{
     align-content: center;
 }
 h2{
     text-align: center;
+}
+
+#results {
+padding: 0;
+}
+
+
+/* media @1000px */
+
+
+@media only screen and (max-width: 1000px){
+    img {
+        width: 150px;
+        float: left
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .ingredients{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .info.row {
+        align-content: center;
+        text-align: center;
+    }
+
+    .info.title.col-sm-8 {
+        align-content: center;
+        float: left;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .col-sm {
+        margin: auto;
+    }
 }
