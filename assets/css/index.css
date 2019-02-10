@@ -14,18 +14,13 @@ body{
     margin: 20px auto;
     font-family: 'Mukta', sans-serif;
     max-width: 30%;
+}
+.container1{
+    margin-top: 420px;
     padding-top: 8px;
     padding-bottom: 8px;
-}
-/* .container1{
-    max-width: 50%;
-    margin-top: 400px;
-    
-
 }
 .container2{
-    max-width: 50%;
-    margin-top: 400px;
     padding-top: 8px;
     padding-bottom: 8px;
-} */
+}
