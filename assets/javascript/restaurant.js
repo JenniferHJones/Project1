@@ -7,6 +7,7 @@ $(document).ready(function () {
     var queryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=499&entity_type=city&sort=rating&order=desc";
     var start = 0;
 
+    // Function to call data from Zomato using ajax
     $("#searchRestaurant").on("click", function () {
         event.preventDefault();
         console.log("click");
@@ -34,6 +35,7 @@ $(document).ready(function () {
         })
     });
 
+    // Function to create a new row and columns of data for first 20 restaurants
     function displayData(restaurants) {
         for (var i = 0; i < restaurants.length; i++) {
             var newRow = $("<tr>");
@@ -41,14 +43,15 @@ $(document).ready(function () {
             newRow.append($("<td>" + restaurants[i].restaurant.cuisines + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.location.locality + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.user_rating.aggregate_rating + " / 5" + "</td>"));
-            newRow.append($("<td>" + restaurants[i].restaurant.average_cost_for_two + "</td>"));
+            newRow.append($("<td>" + "$" + restaurants[i].restaurant.average_cost_for_two + "</td>"));
             newRow.append($("<td><a class='btn btn-primary' href='" + restaurants[i].restaurant.menu_url + "' role='button'>Menu</button></a></td>"));
 
             $("tbody").append(newRow);
         }
         $("#more").show();
-    }
+    };
 
+    // Function to pull additional 20 restaurants
     $(document).on("click", ".more", displayMore);
 
     function displayMore() {
@@ -69,7 +72,6 @@ $(document).ready(function () {
 
             displayData(response.restaurants)
         })
-    }
-
+    };
 
 })
