@@ -15,12 +15,12 @@ body{
     font-family: 'Mukta', sans-serif;
     max-width: 30%;
 }
-.container1{
+.container{
     margin-top: 420px;
     padding-top: 8px;
     padding-bottom: 8px;
 }
-.container2{
-    padding-top: 8px;
-    padding-bottom: 8px;
+
+.question {
+    font-size: 20px;
 }
