@@ -18,7 +18,7 @@
 </head>
 <!-- ############ Nav Bar ############ -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="./index.html">
     <h1>Sacramento Cravings</h1>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -26,6 +26,17 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" id="navRegister">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+      <li class="nav-item" id="navLogin">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item" id="navLogout">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
+    </ul>
     <span class="ml-auto navbar-text">
       <h3>What do you Crave?</h3>
     </span>
@@ -33,110 +44,96 @@
 </nav>
 
 <body>
-  <div class="container1 container jumbotron align-self-center jumbotron-fluid">
-    <div class="row">
-      <div class="col-sm-2">
-      </div>
-      <form class="col-sm-8">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
-            placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="loginPassword" placeholder="Password">
-        </div>
+
+  <div class="container1 container jumbotron align-self-center jumbotron-fluid" id="loginDiv">
+    <div class="login">
+      <form>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control password" placeholder="Password">
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <button type="submit" class="btn btn-primary submit">Login</button>
+            </div>
+          </div>
       </form>
-      <div class="col-sm-2">
-      </div>
+      <div class="col-sm-3"></div>
     </div>
     <div class="row">
-      <div class="col-sm-5">
-      </div>
-      <button type="submit" id="logIn" class="btn col-sm-2 btn-primary">Login</button>
-      <div class="col-sm-5">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2">
-      </div>
-      <p class="col-sm-8">
-        Not a member? Hit <a id="hideLogIn" href="#">Sign Up</a>
-      </p>
-      <div class="col-sm-2">
-      </div>
-    </div>
-  </div>
-  <div class="container2 container jumbotron align-self-center jumbotron-fluid">
-    <div class="row">
-      <div class="col-sm-2">
-      </div>
-      <form class="col-sm-8">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Name</label>
-          <input type="email" class="form-control" id="signupName" aria-describedby="emailHelp"
-            placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp"
-            placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="signupPassword" placeholder="Password">
-        </div>
-      </form>
-      <div class="col-sm-2">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-        <button type="submit" id="logIn" class="btn btn-primary">Complete Registration</button>
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2">
-      </div>
+      <div class="col-sm-2"></div>
       <div class="col-sm-8">
-        <p>
-          Already a member? Hit <a href="./index.html">Sign In</a>.
-        </p>
+        <p class="question">Not a member? <a id="showRegister" href="#"> Sign Up</a></p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container2 container jumbotron align-self-center jumbotron-fluid" id="registerDiv">
+    <div class="register">
+      <form>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control password" placeholder="Password">
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <button type="submit" class="btn btn-primary submit">Register</button>
+            </div>
+          </div>
+      </form>
+      <div class="col-sm-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <p class="question">Already a member? <a id="showLogin" href="#"> Sign In</a></p>
       </div>
       <div class="col-sm-2">
       </div>
     </div>
   </div>
-  </div>
-  </div>
-  <div class="container3 container jumbotron">
-    <div class="row">
-      <div class="col-sm">
-        <h1>What is your choice tonight?</h1>
-      </div>
-    </div>
   </div>
 
   </div>
-  <div class="container4 container jumbotron">
+  <div class="container3 container jumbotron" id="choicesDiv">
     <div class="row">
-      <div class="col-sm">
+      <div class="col-sm mb-3">
+        <h1>What do you crave?</h1>
       </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-sm"></div>
       <div class="col-sm"><a class="btn btn-primary btn-lg btn-block" href="RestaurantSearch.html"
           role="button">Restaurants</a>
       </div>
       <div class="col-sm">
-        <h2>OR</h2>
+        <h2>or</h2>
       </div>
       <div class="col-sm"><a class="btn btn-primary btn-lg btn-block" href="RecipeSearch.html" role="button">Recipes</a>
       </div>
-      <div class="col-sm">
-      </div>
+      <div class="col-sm"></div>
     </div>
   </div>
 
