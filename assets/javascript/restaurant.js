@@ -74,4 +74,12 @@ $(document).ready(function () {
         })
     };
 
+    // Function to run when user clicks Logout button in navbar
+    $("#navLogout").click(userLogOut);
+
+    function userLogOut() {
+        console.log("logout clicked");
+        firebase.auth().signOut();
+    };
+
 })
