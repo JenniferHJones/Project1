@@ -29,14 +29,14 @@ $("#search").on("click", function () {
         console.log(response);
         var newRow;
     
-        var newJumbo = $("<div id ='results' class='container align-self-center '>");
+        var newBox = $("<div id ='results' class='container align-self-center '>");
         $("#results").remove();
-        $(".container2").append(newJumbo);
+        $(".container2").append(newBox);
         var recipeArray = response.hits;
 
         for (var i = 0; i < recipeArray.length; i++) {
-            var newRow = $("<div class='newRow jumbotron-fluid jumbotron row'>");
-            $(newJumbo).append(newRow);
+            newRow = $("<div class='newRow jumbotron-fluid jumbotron row'>");
+            $(newBox).append(newRow);
             // <------------Image------------> //
             var newResImg = $("<div class='imagecol col-sm-4'>");
             var image = $("<image src=" + recipeArray[i].recipe.image + ">");
