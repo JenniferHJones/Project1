@@ -1,14 +1,5 @@
 $(document).ready(function () {
 
-    loadPage();
-
-    function loadPage() {
-        $("#registerDiv").hide();
-        $("#loginDiv").hide();
-        $("#choicesDiv").hide();
-        $("#intro").show();
-    }
-
     // Function to run when user clicks Register button in navbar
     $("#navRegister").click(displayRegister);
 
@@ -75,6 +66,8 @@ $(document).ready(function () {
         if (user) {
             // User is signed in.
             displayChoices();
+            $("#intro").hide();
+            console.log("it's been called")
         } else {
             // No user is signed in.
             userLogOut();
