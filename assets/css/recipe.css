@@ -34,18 +34,26 @@ h2{
     text-align: center;
 }
 
+.col-sm-outer {
+   width: 25%;
+}
+
 #results {
 padding: 0;
 }
 html{ font-family: 'Mukta', sans-serif;
 }
 
-/* media @1000px */
+/* ############# media @1000px ##############*/
 @media only screen and (max-width: 1000px){
     img {
         width: 150px;
         float: left
     }
+
+   .col-sm-outer {
+       width: 20px;
+   }
 }
 
 @media only screen and (max-width: 600px) {
