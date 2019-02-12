@@ -1,3 +1,17 @@
+.nav-item a:hover, .navbar a:hover {
+  color: white !important;
+  text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px orange;
+  cursor: pointer;
+}
+
+.nav-item {
+  font-size: 20px;
+}
+
+#search, #more {
+  display: none;
+}
+
 body {
   background-image: url(../images/resorrecimage.png);
   background-attachment: fixed;
@@ -17,7 +31,6 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-
 
 #votes {
   font-size: 10px;
@@ -140,5 +153,4 @@ only screen and (max-width: 900px),
 	td:nth-of-type(4):before { content: "Rating"; }
 	td:nth-of-type(5):before { content: "Cost 4 2"; }
 	td:nth-of-type(6):before { content: "Menu"; }
-
 }

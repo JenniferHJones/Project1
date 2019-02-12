@@ -1,8 +1,5 @@
 $(document).ready(function () {
-    $("#search").hide();
-    $("#more").hide();
-
-
+ 
     // Zomato ajax call is limited to 20 results
     var queryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=499&entity_type=city&sort=rating&order=desc";
     var start = 0;
@@ -44,14 +41,14 @@ $(document).ready(function () {
             newRow.append($("<td>" + restaurants[i].restaurant.location.locality + "</td>"));
             newRow.append($("<td>" + restaurants[i].restaurant.user_rating.aggregate_rating + " / 5" + "</td>"));
             newRow.append($("<td>" + "$" + restaurants[i].restaurant.average_cost_for_two + "</td>"));
-            newRow.append($("<td><a class='btn btn-primary' href='" + restaurants[i].restaurant.menu_url + "' role='button'>Menu</button></a></td>"));
+            newRow.append($("<td><a class='btn btn-warning btn-outline-secondary' href='" + restaurants[i].restaurant.menu_url + "'target='_blank' role='button'>Menu</button></a></td>"));
 
             $("tbody").append(newRow);
         }
         $("#more").show();
     };
 
-    // Function to pull additional 20 restaurants
+    // Function to pull additional 20 restaurants after clicking More Results button
     $(document).on("click", ".more", displayMore);
 
     function displayMore() {
@@ -72,14 +69,6 @@ $(document).ready(function () {
 
             displayData(response.restaurants)
         })
-    };
-
-    // Function to run when user clicks Logout button in navbar
-    $("#navLogout").click(userLogOut);
-
-    function userLogOut() {
-        console.log("logout clicked");
-        firebase.auth().signOut();
     };
 
 })

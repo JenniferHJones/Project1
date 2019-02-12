@@ -19,23 +19,21 @@
     <title>Crave Sacramento</title>
 </head>
 <!-- ############ Nav Bar ############ -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="./index.html"><h1>Crave Sacramento</h1></a>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">
+        <h1>Crave Sacramento</h1>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+        <ul class="navbar-nav ml-2">
+            <li class="nav-item mr-2">
                 <a class="nav-link" href="./RestaurantSearch.html">Restaurant Search</a>
             </li>
-
-            <li class="nav-item active">
+            <li class="nav-item mr-2 active">
                 <a class="nav-link" href="./RecipeSearch.html">Recipe Search<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item" id="navLogout">
-                <a class="nav-link" href="#">Logout</a>
             </li>
         </ul>
     </div>
@@ -65,7 +63,8 @@
                         <label for="preptime">Prep Time (in minutes)</label>
                         <input type="preptime" class="form-control" id="prepTimeSearch" placeholder="30">
                     </div>
-                    <button type="submit" id="search" class="btn btn-warning btn-outline-secondary btn-lg">Search</button>
+                    <button type="submit" id="search"
+                        class="btn btn-warning btn-outline-secondary">Search</button>
                 </form>
             </div>
             <div class="col-sm-outer">
