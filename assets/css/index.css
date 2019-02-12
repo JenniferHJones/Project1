@@ -26,4 +26,9 @@ body{
 }
 html{
     font-family: 'Mukta', sans-serif;
+
+
+.title {
+    text-align: left;
+    font-size: 40px;
 }
