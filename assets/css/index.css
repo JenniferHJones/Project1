@@ -24,6 +24,9 @@ body{
 .question {
     font-size: 20px;
 }
+html{
+    font-family: 'Mukta', sans-serif;
+
 
 .title {
     text-align: left;
