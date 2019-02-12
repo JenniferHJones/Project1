@@ -7,6 +7,7 @@ body{
     background-size: cover;
     font-family: 'Mukta', sans-serif;
 }
+
 .jumbotron{
     font-size: 30px;
     background: rgba(211, 211, 211, 0.80);
@@ -15,6 +16,7 @@ body{
     font-family: 'Mukta', sans-serif;
     max-width: 30%;
 }
+
 .container{
     margin-top: 420px;
     padding-top: 8px;
@@ -24,10 +26,12 @@ body{
 .question {
     font-size: 20px;
 }
+
 .title {
     text-align: left;
     font-size: 40px;
 }
+
 .container0{
     background: rgba(211, 211, 211, 0.00);
     text-align: center;
