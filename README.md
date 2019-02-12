@@ -1,4 +1,4 @@
-# Sacramento Cravings
+# Crave Sacramento
 ***
 [Application link](https://jenniferhjones.github.io/Project1/)
 
