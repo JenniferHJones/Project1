@@ -6,6 +6,7 @@ $(document).ready(function () {
         $("#registerDiv").hide();
         $("#loginDiv").hide();
         $("#choicesDiv").hide();
+        $("#intro").show();
     }
 
     // Function to run when user clicks Register button in navbar
@@ -16,6 +17,7 @@ $(document).ready(function () {
         $("#registerDiv").show();
         $("#loginDiv").hide();
         $("#choicesDiv").hide();
+        $("#intro").hide();
     }
 
     // Function to run when user clicks Login button in navbar
@@ -26,6 +28,7 @@ $(document).ready(function () {
         $("#loginDiv").show();
         $("#registerDiv").hide();
         $("#choicesDiv").hide();
+        $("#intro").hide();
     }
 
     // Function to run when user clicks Logout button in navbar
@@ -37,6 +40,7 @@ $(document).ready(function () {
         $("#choicesDiv").hide();
         $("#loginDiv").hide();
         $("#registerDiv").hide();
+        $("#intro").show();
     };
 
     $("#showLogin").click(displayLogin);
