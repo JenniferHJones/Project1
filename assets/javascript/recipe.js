@@ -35,7 +35,7 @@ $("#search").on("click", function () {
         var recipeArray = response.hits;
 
         for (var i = 0; i < recipeArray.length; i++) {
-            newRow = $("<div class='newRow jumbotron-fluid jumbotron row'>");
+            newRow = $("<div class='newRow jumbotron-fluid lightSpeedIn jumbotron row'>");
             $(newBox).append(newRow);
             // <------------Image------------> //
             var newResImg = $("<div class='imagecol col-sm-4'>");
