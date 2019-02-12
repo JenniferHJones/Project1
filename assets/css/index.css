@@ -32,7 +32,7 @@ body{
     font-size: 40px;
 }
 
-.container0{
+.container0 {
     background: rgba(211, 211, 211, 0.00);
     text-align: center;
     margin-top: 460px;
@@ -54,3 +54,16 @@ html{
 #registerDiv, #loginDiv, #choicesDiv {
     display: none;
 } 
+
+.container3 {
+    margin-top: 460px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.night {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px orange;
+    font-size: 60px;
+}
