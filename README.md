@@ -4,7 +4,7 @@
 
 ## Description
 ***
-This application was written for project 1 of the UCD Coding Bootcamp. 
+This application was written for project 1 of the UCD Coding Bootcamp. Our site will provide indecisive Sac locals the option to dine in with a recipe of their choosing or dine out at a restaurant for a night on the town. Once you log in to the site you can choose which experience you are interested in. With the recipe page search by keyword and prep time. With the restaurant page search for a cuisine type or name of an establisment.
 
 ## Sample View
 ***
@@ -15,6 +15,7 @@ This application was written for project 1 of the UCD Coding Bootcamp.
 * HTML
 * CSS
 * CSS Bootstrap
+* Animate CSS
 * Javascript
 * jQuery
 * Firebase Authentication
