@@ -73,4 +73,12 @@ $("#search").on("click", function () {
             $(newLinkRow).html("<a class='btn btn-primary' href='" + recipeArray[i].recipe.url + "' role='button'>Checkout the full recipe!</a>");
         }
     });
+
+    // Function to run when user clicks Logout button in navbar
+    $("#navLogout").click(userLogOut);
+
+    function userLogOut() {
+        console.log("logout clicked");
+        firebase.auth().signOut();
+    };
 })
