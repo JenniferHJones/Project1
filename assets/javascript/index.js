@@ -28,15 +28,6 @@ $(document).ready(function () {
         $("#choicesDiv").hide();
     }
 
-    // Function to run when user clicks submit button after registering or logging in
-    $(".submit").click(displayChoices);
-
-    function displayChoices() {
-        $("#choicesDiv").show();
-        $("#loginDiv").hide();
-        $("#registerDiv").hide();
-    }
-
     // Function to run when user clicks Logout button in navbar
     $("#navLogout").click(userLogOut);
 
@@ -66,16 +57,25 @@ $(document).ready(function () {
 
     var database = firebase.database();
 
-    // // Function to run based on if user is logged in or not
-    // firebase.auth().onAuthStateChanged(function (user) {
-    //     if (user) {
-    //         // User is signed in.
+     // Function to run when user clicks submit button after registering or logging in
+    //  $(".submit").click(displayChoices);
 
-    //     } else {
-    //         // No user is signed in.
+     function displayChoices() {
+         $("#choicesDiv").show();
+         $("#loginDiv").hide();
+         $("#registerDiv").hide();
+     }
 
-    //     }
-    // });
+    // Function to run based on if user is logged in or not
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            // User is signed in.
+            displayChoices();
+        } else {
+            // No user is signed in.
+            userLogOut();
+        }
+    });
 
     // Function to register a new user
     $(".register form").on("submit", function (event) {
