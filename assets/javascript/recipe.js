@@ -31,7 +31,7 @@ $("#search").on("click", function () {
     
         var newBox = $("<div id ='results' class='container align-self-center '>");
         $("#results").remove();
-        $(".container2").append(newBox);
+        $(".container3").append(newBox);
         var recipeArray = response.hits;
 
         for (var i = 0; i < recipeArray.length; i++) {
