@@ -23,9 +23,3 @@ This application was written for project 1 of the UCD Coding Bootcamp. Our site 
 ## Sample View
 
 ![Crave Sacramento App Screenshot](/assets/images/screenshot1.png/)
-
-***
-![Crave Sacramento App Screenshot](/assets/images/screenshot2.png/)
-
-***
-![Crave Sacramento App Screenshot](/assets/images/screenshot3.png/)
