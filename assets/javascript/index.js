@@ -52,9 +52,6 @@ $(document).ready(function () {
 
     var database = firebase.database();
 
-    // Function to run when user clicks submit button after registering or logging in
-    //  $(".submit").click(displayChoices);
-
     function displayChoices() {
         $("#choicesDiv").show();
         $("#loginDiv").hide();
