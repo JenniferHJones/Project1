@@ -16,7 +16,7 @@ This application was written for project 1 of the UCD Coding Bootcamp. Our site 
 * CSS Bootstrap
 * Firebase Authentication
 * HTML
-* Javascript
+* JavaScript
 * jQuery
 
 
