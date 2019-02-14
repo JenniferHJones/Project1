@@ -19,6 +19,11 @@ This application was written for project 1 of the UCD Coding Bootcamp. Our site 
 * JavaScript
 * jQuery
 
+## Authors and acknowledgment
+* Alfieri Unciano
+* Jeff Welch
+* Jennifer Jones
+* Lindsay Campbell
 
 ## Sample View
 
